@@ -9,6 +9,7 @@
     --pure-white: #ffffff;
     --grey-clr: #8080809b;
     --light-blue: #cbe2f1a5;
+    --segoe-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -37,7 +38,7 @@ body{
     box-shadow: 0 0 7px var(--grey-clr);
     font-size: 48px;
     text-align: right;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--segoe-font);
     font-weight: bold;
     padding-right: 15px;
     pointer-events: none;
@@ -63,7 +64,7 @@ body{
     font-size: 24px;
     transition: 0.25s;
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--segoe-font);
 }
 
 .btn:hover{
