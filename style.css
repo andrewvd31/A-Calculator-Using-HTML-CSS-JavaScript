@@ -10,12 +10,11 @@ body{
     justify-content: center;
     height: 100vh;
     background-color: rgb(20, 11, 39);
-    
 }
 
 .calculator-big-screen{
     width: 30%;
-    height: 500px;
+    padding: 20px 10px;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(128, 128, 128, 0.608);
@@ -40,11 +39,10 @@ body{
 .calculator-container{
     display: flex;
     margin: 0 20px;
-    width: 92%;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .btn,.clear-btn,.backsp-btn,.equal-to{
