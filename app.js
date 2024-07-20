@@ -3,6 +3,7 @@ const backBtn = document.querySelector(".backsp-btn");
 const equalToBtn = document.querySelector(".equal-to");
 const btnClick = document.querySelectorAll(".btn");
 const inputbtnValue = document.querySelector(".number-box");
+const operationBtn = document.querySelectorAll(".btn .operation-btn");
 
 btnClick.forEach(myFunction);
 
@@ -23,6 +24,9 @@ function evaluateFunction() {
     const equalTo = eval(inputbtnValue.value);
     inputbtnValue.value = equalTo;
     buttonFunctionDisable(false);
+    if (inputbtnValue.value.length === inputbtnValue.maxLength){
+        buttonFunctionDisable(true);
+    }
   }
 }
 
@@ -42,7 +46,17 @@ function myFunction(button) {
       inputbtnValue.value += btnClick;
     }
     if (inputbtnValue.value.length === inputbtnValue.maxLength) {
-      buttonFunctionDisable(true);
+      if (
+        btnClick === "+" ||
+        btnClick === "-" ||
+        btnClick === "*" ||
+        btnClick === "/"
+      ) {
+        buttonFunctionDisable(false);
+      }
+      else{
+        buttonFunctionDisable(true);
+      }
     }
   });
 }
