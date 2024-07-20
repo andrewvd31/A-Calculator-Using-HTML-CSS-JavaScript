@@ -7,15 +7,14 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="calculator-big-screen">
         <input type="text" id="number-box" class="number-box" minlength="1" maxlength="15">
         <div class="calculator-container">
             <button class="clear-btn">AC</button>
-            <button class="backsp-btn"><i class="fa-solid fa-delete-left"></i></button>
             <button class="btn" data-set="%">%</button>
+            <button class="backsp-btn"><i class="fa-solid fa-delete-left"></i></button>
             <button class="btn operation-btn" data-set="/">÷</button>
         </div>
         <div class="calculator-container">
@@ -42,5 +41,6 @@
             <button class="equal-to">=</button>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
