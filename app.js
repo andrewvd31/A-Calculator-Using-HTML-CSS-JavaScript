@@ -32,6 +32,7 @@ function evaluateFunction() {
 
 function clearFunction() {
   inputbtnValue.value = "";
+  buttonFunctionDisable(false);
 }
 
 function backSpaceFunction() {
